@@ -85,7 +85,7 @@ h1 {
 }
 .analog-center:after{
             content: "";
-            background-color:Gold ;
+            background-color:GoldenRod ;
             height:17px;
             width:17px;
             transform: translate(-9px,-9px);
