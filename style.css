@@ -1,37 +1,80 @@
-html,body {
-    height: 100%;
+
+#analog{
+            height:400px;
+            width:100%;
+            position: relative;
 }
-body {
-    background: #0f3854;
-    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
-    background-size: 100%;
+#analog .analog-face{
+            border: 3px solid black;
+            background-color:white ;
+            border-radius:50%;
+            position: absolute;
 }
-p {
-    margin: 0;
-    padding: 0;
+#analog div{
+            box-sizing: content-box;
 }
-#clock {
-    font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #daf6ff;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
-    .time {
-        letter-spacing: 0.05em;
-        font-size: 80px;
-        padding: 5px 0;
-    }
-    .date {
-        letter-spacing: 0.1em;
-        font-size: 24px;
-    }
-    .text {
-        letter-spacing: 0.1em;
-        font-size: 12px;
-        padding: 20px 0 0;
-    }
+.analog-line1,.analog-line2{
+            position: absolute;
+            left:0;
+            z-index: 1;
+}
+.analog-line1{
+            width:5px;
+            height: 3px;
+            background: black;
+            top:calc(50% - 2px);
+}
+.analog-line2{
+            width:3px;
+            height: 2px;
+            background: black;
+            top:calc(50% - 1px);
+}
+.analog-text{
+            color:black;
+            font-size:2em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+}
+.analog-seconds{
+            background-color:red ;
+            width:5px;
+            position: absolute;
+            z-index: 10;
+            border-radius: 5px;
+}
+.analog-hours{
+            background-color:black ;
+            width:10px;
+            position: absolute;
+            z-index: 8;
+            border-radius: 5px;
+}
+.analog-minutes{
+            background-color:black ;
+            width:10px;
+            position: absolute;
+            z-index: 9;
+            border-radius: 5px;
+}
+.analog-center,.analog-center:after{
+            position: absolute;
+            top:50%;
+            left:50%;
+            z-index: 15;
+            border-radius: 50%;
+}
+.analog-center{
+            background-color:black ;
+            height:21px;
+            width:21px;
+            transform: translate(-11px,-11px);
+}
+.analog-center:after{
+            content: "";
+            background-color:silver ;
+            height:17px;
+            width:17px;
+            transform: translate(-9px,-9px);
 }
