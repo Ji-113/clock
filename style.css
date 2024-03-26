@@ -38,7 +38,7 @@
             z-index: 2;
 }
 .analog-seconds{
-            background-color:red ;
+            background-color:black ;
             width:5px;
             position: absolute;
             z-index: 10;
@@ -73,7 +73,7 @@
 }
 .analog-center:after{
             content: "";
-            background-color:silver ;
+            background-color:Gold ;
             height:17px;
             width:17px;
             transform: translate(-9px,-9px);
