@@ -21,13 +21,13 @@
 .analog-line1{
             width:5px;
             height: 3px;
-            background: black;
+            background: #0d0015;
             top:calc(50% - 2px);
 }
 .analog-line2{
             width:3px;
             height: 2px;
-            background: black;
+            background: #0d0015;
             top:calc(50% - 1px);
 }
 .analog-text{
@@ -38,21 +38,21 @@
             z-index: 2;
 }
 .analog-seconds{
-            background-color:black ;
+            background-color:#0d0015 ;
             width:3px;
             position: absolute;
             z-index: 10;
             border-radius: 5px;
 }
 .analog-hours{
-            background-color:black ;
+            background-color:#0d0015 ;
             width:10px;
             position: absolute;
             z-index: 8;
             border-radius: 5px;
 }
 .analog-minutes{
-            background-color:black ;
+            background-color:#0d0015 ;
             width:10px;
             position: absolute;
             z-index: 9;
@@ -66,7 +66,7 @@
             border-radius: 50%;
 }
 .analog-center{
-            background-color:black ;
+            background-color:#0d0015 ;
             height:21px;
             width:21px;
             transform: translate(-11px,-11px);
