@@ -1,3 +1,18 @@
+// 時計の"12:1"を"12:01"と表記
+            function adjustDigit (num){
+                let digit;
+                if( num < 10 ) {digit = `0${num}`;}
+                else { digit = num; }
+                return digit;
+            }
+ //時計を動かす
+            function updateCurrentTime(){
+                setTimeout(function(){
+                    currentDate = new Date();
+                    hours = adjustDigit(currentDate.getHours());
+                    minutes = adjustDigit(currentDate.getMinutes());
+                    seconds = adjustDigit(currentDate.getSeconds());
+                    digital.innerHTML = `${hours}:${minutes}:${seconds}`;
 
 (()=>{
     const addDiv = (parentDiv,className,callBack = null ) => {
