@@ -1,6 +1,6 @@
 {
-  "name": "タイマー",
-  "short_name": "タイマー",
+  "name": "時計",
+  "short_name": "時計",
   "theme_color": "#ffffff",
   "background_color": "#F0F8FF",
   "display": "standalone",
